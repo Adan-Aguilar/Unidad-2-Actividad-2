@@ -1,0 +1,13 @@
+﻿@model IEnumerable<Unidad_2_A2.Models.Villancico>
+@{
+    Layout = "_Layout";
+}
+
+<ul>
+    @foreach (var villancico in Model)
+       {
+        <li><a href="~/Home/villancico/@villancico.Id">@villancico.Nombre</a></li>
+
+    }
+
+</ul>
